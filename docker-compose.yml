@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: unified_telegram_bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
+      - ./certs:/app/certs:ro
+    environment:
+      - TZ=Europe/Moscow
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+

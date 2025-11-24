@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Виртуальное окружение
+venv/
+env/
+ENV/
+
+# Конфиденциальные данные
+.env
+*.env
+
+# Логи
+logs/
+*.log
+
+# Резервные копии
+backups/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
